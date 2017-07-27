@@ -20,6 +20,6 @@
  Number("11") //11
  Number("203.11.12") //NaN
  Number("360buy") //NaN
- </div
+ </div>
  
 

@@ -6,10 +6,7 @@
 <ul>
   <li>parseInt("65535个字节"),结果为65535</li>
   <li>parseInt("emc65535个字节"),结果为NaN</li>
-  <li>parseInt("01011",2),结果为11。8,16进制以此类推</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>parseInt("01011",2),结果为11. 8,16进制以此类推</li>
  </ul>
+ Number(false)//0 Number(true) //1
 

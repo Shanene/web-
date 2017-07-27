@@ -9,7 +9,7 @@
   <li>parseInt("emc65535个字节")//NaN</li>
  <li>parseInt("01011",2)//11. 8,16进制以此类推</li>
  </ul>
- <div style="border:solid 1px purple；width：30px;">
+ <div style="border:solid 1px purple;width：30px;">
  Number(false)//0 
  Number(true) //1
  Number("false") //NaN

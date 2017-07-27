@@ -35,17 +35,13 @@ null==undefined//true<br/>
 var a=5;alert(void(a));//undefined<br/>
 js枚举类型定义：<br/>
 方法 1:var DataType = {String1:value1,String2:value2 }<br/>
-方法 2:
-var DataType = { } ;<br/>
+方法 2:var DataType = {};<br/>
 DataType.String1=value1;<br/><br/>
 DataType.String2=value2;<br/>
 遍历枚举类型：<br/>
 1:var DataType = {String1:"value1",String2:"value2"};
 for(var i in DataType ){<br/>
-DataType[i]; //获取value<br/>
-i;//下标<br/>
-alert(DataType[i]);
- }<br/>
+DataType[i]; //获取value<br/>i;//下标<br/>alert(DataType[i]);}<br/>
 2:var person={name:"a",age:"30",like:"eat"};<br/>
 for(prop in person){<br/>
 alert(prop+":"+person[prop])}//分三次弹出1:name:a 2:age:30 3:like:eat<br/>

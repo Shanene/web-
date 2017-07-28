@@ -46,7 +46,24 @@ DataType[i]; //获取value<br/>i;//下标<br/>alert(DataType[i]);}<br/>
 for(prop in person){<br/>
 alert(prop+":"+person[prop])}//分三次弹出1:name:a 2:age:30 3:like:eat<br/>
 3:var a=[2,3,45,5,67,89];for(index in a){if(5<a[index]){alert("a的"+(index+1)+"个元素"+a[index]+"大于5");}}
-for  in语句不需要定义计数器，所以在遍历一个数组是，其所消耗的资源要比for语句更低，执行效率更高，建议尽量使用for in语句来遍历数组，以提高脚本的执行效率。
+for  in语句不需要定义计数器，所以在遍历一个数组是，其所消耗的资源要比for语句更低，执行效率更高，建议尽量使用for in语句来遍历数组，以提高脚本的执行效率。<br/>
+function b(){
+	var a=[];
+	var sum=0;
+	var average=0;<br/>
+	for(arg in arguments){
+		if("number"===typeof arguments[arg]){
+			a.push(arguments[arg]);
+		}
+	}//arguments.length=4,arguments[0]=3<br/>
+		for(arg in a){
+			sum+=a[arg];
+		}<br/>
+		average=sum/a.length;
+		return average;
+	}
+<br/>
+	alert(b(3,5,9,"b"));//5.67<br/>
 
 
  

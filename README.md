@@ -64,7 +64,14 @@ function b(){
 		return average;
 	}
 <br/>
-	alert(b(3,5,9,"b"));//5.67<br/>
+	alert(b(3,5,9,"b"));//5.67<br/>	
+5:Object原型对象的方法<br/>
+返回true和false<br/>
+ObjectName.hasOwnProperty(property);//判断对象是否具有某个特定的属性<br/>
+ParentObjectName.isPrototypeOf(ChildObjectName);//判断对象是否为另一个对象的原型<br/>
+如： var objTest=new Object();alert(Object.isPrototypeOf(objTest));//true<br/>
+ObjectName.propertyIsEnumerable(property)//判断对象的某一个属性是否可以被枚举<br/> 
+
 
 
  

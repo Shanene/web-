@@ -86,6 +86,12 @@ document.write(str.sub(StartIndex,length))//<br />这几种方法推荐使用sli
 "|a|b|c".split("|")	//将返回["", "a", "b", "c"]
 var str="How are you doing today?"document.write(str.split(" ",3))//How,are,you<br />
 10:输出时间信息：Js获取当前日期时间及其它操作:http://www.cnblogs.com/carekee/articles/1678041.html <br />
+11:数组：
+表示的是第几个元素之后添加 var a=[1,2,3,4,5];
+a.splice(2,0,8,9)//1,2,8,9,3,4,5<br />
+表示倒数第几个元素之前添加 a.splice(-1,0,6,7)//1,2,3,4,6,7,5br />
+a.splice(2,2)//1,2,5<br />
+a.splice(2,2,6,7)//1,2,6,7,5<br />s  
 
 
 

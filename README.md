@@ -71,6 +71,24 @@ ObjectName.hasOwnProperty(property);//判断对象是否具有某个特定的属
 ParentObjectName.isPrototypeOf(ChildObjectName);//判断对象是否为另一个对象的原型<br/>
 如： var objTest=new Object();alert(Object.isPrototypeOf(objTest));//true<br/>
 ObjectName.propertyIsEnumerable(property)//判断对象的某一个属性是否可以被枚举<br/> 
+6:字符串对象<br/>
+var a="javascript";<br/>console.log(a.chartAt(4))//s<br/>
+console.log(a.charCodeAt(4))//115  输出字母s在utf-8字符集的编号<br/>
+检索字符串,若失败，则返回-1：<br/>var a="inter and outer";alert(a.indexOf("and"))//6<br/>
+alert(a.indexOf("and",7))///-1都只检索第一次出现的位置<br/>
+document.write(str.lastIndexOf("Hello") + "<br />")//0
+7:连接字符串： var a="java".concat("s","cript");alert(a)//javascript<br />
+8:提取字符串片段：var str="Hello world!"document.write(str.substring(3))//lo world!
+document.write(str.substring(3,7))//lo w<br />
+document.write(str.slice(3,7))//lo w<br />
+document.write(str.sub(StartIndex,length))//<br />这几种方法推荐使用slice（）方法<br />
+9：分割字符串："2:3:4:5".split(":")	//将返回["2", "3", "4", "5"]
+"|a|b|c".split("|")	//将返回["", "a", "b", "c"]
+var str="How are you doing today?"document.write(str.split(" ",3))//How,are,you<br />
+10:输出时间信息：Js获取当前日期时间及其它操作:http://www.cnblogs.com/carekee/articles/1678041.html <br />
+
+
+
 
 
 

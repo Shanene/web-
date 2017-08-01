@@ -19,7 +19,7 @@
  Number("11") //11 <br/>
  Number("203.11.12") //NaN <br/>
  Number("360buy") //NaN <br/>
-# Boolean()函数：<br/>
+# Boolean()函数：
  数据类型：
  String 为空时为false，否则为true<br/>
  Number 为数字+0，-0,0，NaN是为false，否则为true<br/>

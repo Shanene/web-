@@ -3,7 +3,7 @@
 1.绝对长度值：pt 磅 1pt=3/4px, pc 皮咔 1pc=12磅<br/>
   相对长度值：em 当设置字体为12px时，1em=12px,如未设置时，em的值根据浏览器默认字体大小来确定。在IE浏览器默认字体为16px;em/2=ex;<br/>
 ## JS
-# 1.转换类
+# 1.转换类<br />
 <ul>
   <li>parseInt("65535个字节")//65535</li>
   <li>parseInt("emc65535个字节")//NaN</li>
@@ -105,6 +105,19 @@ if(null!==a && ""!==a){
 	alert("您的姓名是"+a);
 }
 else alert("您没有输入你的姓名");<br />
+# 检测是否启用cookie功能
+<br />
+if(window.navigator.cookieEnabled){
+	alert("支持cookie功能");
+}else alert("不支持cookie功能");//navigator 浏览器对象
+# 屏幕对象
+window.screen.availHeight //除任务栏以外的显示屏幕高度（px）;window.screen.availWidth //除任务栏以外的显示屏幕高度（px）;
+window.screen.height //显示屏幕的高度 window.screen.width //显示屏幕的高度
+window.screen.color.Depth(整数)<br />  
+# 定位对象
+window.location.href="http://baidu.com" //从此页面跳转到百度首页
+# 访问元素集合
+Window.document.images.length//统计页面中图像的数量<br />
 
 
 

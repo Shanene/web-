@@ -117,15 +117,33 @@ window.screen.color.Depth(整数)<br />  
 # 定位对象
 window.location.href="http://baidu.com" //从此页面跳转到百度首页
 # 访问元素集合
-Window.document.images.length//统计页面中图像的数量<br />
-
-
-
-
-
+Window.document.images.length//统计页面中图像的数量<br/>
+# 获取当前文档的其他信息
+alert("本页的主机地址是"+document.domain);<br/>
+alert("本页的最后一次编辑的时间是"+document.lastModified);<br/>
+if(null!==doucument.referrer)alert("本页的是由"+document.referrer+"跳转而来");//如果当前文档是由超链接跳转而来，则获取该超链接所在文档的URL，否则返回null<br/>
+if(""!==document.title) alert("本页面的标题为"+document.title);<br/>
+alert("本页的URL为"+document.URL);<br/>
+# 打开和关闭web文档流
+ var new_doc = document.open("text/html","replace");
+    var txt = "这是新的文档";
+    new_doc.write(txt);
+    new_doc.close();
+# Element对象
+<input  id="all" type="checkbox" name="username" /><br/>
+ var a =document.getElementById('all');alert(a.tagName);//INPUT<br/>
+alert(a.nodeName)//INPUT<br/>
+tagName只针对于XHTML和HTML中的document类型和element类型的节点有效；而nodeName还对attribute类型和text类型节点有效，所以尽量使用nodename。
+# 读取关联节点信息
+1：获取父节点<form action="" id="form">
+<input type="number" name="text1" id="num1">
+<input type="number" name="text2" id="num2"></form><br/>
+ var a =document.getElementById('num1');
+ var b=a.parentNode;
+  alert(b.nodeName);//FORM<br/>
+ var c =document.getElementById('form');
+var d=a.childNodes;
+for(var i=0;i<d.length;i++)
+alert(d.item(i).nodeName);
 
  
- 
-
- 
-

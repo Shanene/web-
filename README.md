@@ -144,5 +144,13 @@ tagName只针对于XHTML和HTML中的document类型和element类型的节点有�
 var d=a.childNodes;
 for(var i=0;i<d.length;i++)
 alert(d.item(i).nodeName);
+# Event对象的方法
+<p>
+	<button type="button" name="test" onclick="javascript:showName();"></button>
+</p>
+function showName()
+{
+	alert(event.target.name);
+}//test
 
  

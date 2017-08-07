@@ -147,8 +147,7 @@ function showName()
 {
 	alert(event.target.name);
 }//test
-B/S:B指的是browser S指的是server服务器
-C/S：c为client 客户端（QQ等）
+
 
 
 
